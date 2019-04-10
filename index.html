@@ -8,26 +8,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Title</title>
+  <title>Gif-Tastic</title>
 </head>
 
-<body>
-  <div class="top-nav sticky-top">
-    <nav class="navbar navbar-light bg-dark text-white">
-      <a class="navbar-brand" id="title">Gif-Tastic</a>
-      <form class="form-inline">
-        <p class="mr-4 text-bottom" id="info">Enter name of an animal and click search to get more gifs.</p>
-        <input class="form-control mr-sm-2" id="user-input" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" id="add-button" type="submit">Search</button>
-      </form>
+<body class="bg-success">
+
+    <div class="sticky-top">
+    <nav class="navbar navbar-light bg-primary text-white">
+
+      <a class="navbar-brand ml-4" id="title">Gif-Tastic</a>
+
+      <div id="form">
+        <form id="actor-form">
+          <label for="actor-input" style="font-size: 20px;">Enter name of an actor and click search to get gifs.</label>
+          <input type="text" id="actor-input" class="ml-2">
+          <input id="add-actor" class="btn btn-outline-light ml-2" type="submit" value="Search">
+        </form>
+      </div>
+
     </nav>
 
-    <div class="p-3 mb-2 bg-secondary text-white">
-      <div class="buttons-here text-right"></div>
+    <div class="p-3 bg-warning ml-auto">
+      <div id="buttons-area"></div>
     </div>
   </div>
 
-  <div class="row gifs-here mt-4"></div>
+    <div id="gifs-area" class="row"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
