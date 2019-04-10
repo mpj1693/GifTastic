@@ -41,7 +41,7 @@ function displayGifs() {
 
     for (var i = 0; i < results.length; i++) {
 
-      var gifDiv = $('<div class="gifs col-lg-3 col-md-6 col-sm-12 text-center img-fluid">');
+      var gifDiv = $('<div class="gifs col-lg-3 col-md-6 col-sm-12 text-center mt-3">');
       var actorGif = $('<img>');
       actorGif.attr('src', results[i].images.fixed_height_still.url);
 
